@@ -96,7 +96,7 @@ void medianPivotQuicksort(int list[], int left, int right)
 int main(void)
 {
 	int test_list1[8] = { 3, 10, 22, 30, 35, 13, 25, 24 };
-	int test_list2[2] = { 98, 72 };//{ 72, 13, 58, 33, 45, 9, 98, 19 };
+	int test_list2[8] = { 72, 13, 58, 33, 45, 9, 98, 19 };
 	//가장 왼쪽 값을 pivot으로 삼는 퀵정렬 테스트
 	leftPivotQuicksort(test_list1, 0, 7);
 	printf("Test [leftPivot] Quick Sort(8 values) : ");
@@ -107,9 +107,9 @@ int main(void)
 	printf("\b\n");
 
 	//중간 값(median)값을 pivot으로 삼는 퀵정렬 테스트
-	medianPivotQuicksort(test_list2, 0, 1);
+	medianPivotQuicksort(test_list2, 0, 7);
 	printf("Test [medianPivot] Quick Sort(8 values) : ");
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 8; i++)
 	{
 		printf("%d ", test_list2[i]);
 	}
