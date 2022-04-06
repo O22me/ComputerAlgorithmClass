@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="quicksort_Assn02.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SelectionAlgorithm_Assn03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
