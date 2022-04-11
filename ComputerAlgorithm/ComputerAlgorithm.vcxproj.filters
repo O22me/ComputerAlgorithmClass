@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SelectionAlgorithm_Assn03.cpp">
+    <ClCompile Include="KruskalMST_Assn04.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
