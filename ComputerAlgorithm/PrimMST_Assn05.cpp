@@ -8,7 +8,7 @@ int distance[MAX_VERTICES];
 
 int get_min_vertice(int graph[][MAX_VERTICES], int n_vertices)
 {
-	int v;
+	int v = 0;
 
 	//선택되지 않았던 정점 찾기
 	for (int i = 0; i < n_vertices; i++)
@@ -34,7 +34,7 @@ void prim(int graph[][MAX_VERTICES], int start_vertex, int n_vertices)
 	int u, v;	//두 정점 선언
 
 	//정점 초기화
-	for (u = 0; u < n_vertices; u++) distance[u] = INF;
+	for (int i = 0; i < n_vertices; i++) distance[i] = INF;
 	distance[start_vertex] = 0;	//첫 정점 0으로 초기화
 
 	//핵심 코드
@@ -45,6 +45,7 @@ void prim(int graph[][MAX_VERTICES], int start_vertex, int n_vertices)
 		selected[u] = true;
 
 		//추가된 코드 : 완전 그래프가 아닌 나눠진 그래프인 경우 종료.
+		//가장 가중치가 낮은 간선 = INF인 상황
 		if (distance[u] == INF) return;
 
 		printf("Selected Vertice : %d\n", u);
